@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="flash" class="flash-effect"></div>
+
+  <div id="lockScreen">
+    <img class="sticker" src="6700_1_06.jpg" alt="sticker">
+    <div class="left-image">
+      <img src="img.png" alt="Couple Photo">
+    </div>
+
+    <div class="passcode-container" id="passcodePanel">
+      <h2 style="margin-top:0;">Hello, My Love ❤️</h2>
+      <p style="opacity:0.8; font-size: 14px;">Hint: Our special date 📅</p>
+
+      <div class="passcode-display">
+        <input type="password" maxlength="1" readonly>
+        <input type="password" maxlength="1" readonly>
+        <input type="password" maxlength="1" readonly>
+        <input type="password" maxlength="1" readonly>
+      </div>
+
+      <div class="keypad">
+        <div class="key" onclick="press(1)">1</div><div class="key" onclick="press(2)">2</div><div class="key" onclick="press(3)">3</div>
+        <div class="key" onclick="press(4)">4</div><div class="key" onclick="press(5)">5</div><div class="key" onclick="press(6)">6</div>
+        <div class="key" onclick="press(7)">7</div><div class="key" onclick="press(8)">8</div><div class="key" onclick="press(9)">9</div>
+        <div></div><div class="key" onclick="press(0)">0</div><div class="key" onclick="clearCode()">⌫</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="love-screen" id="loveScreen">
+    <div class="camera-section">
+      <div class="instax-body">
+        <div class="lens"></div>
+        <div class="photo-slot">
+          <div class="printed-photo" id="photoToPrint">
+            <img src="img2.jpeg" alt="Polaroid">
+            <div class="photo-date">April 24, 2026 ❤️</div>
+          </div>
+        </div>
+      </div>
+      <h1 class="love-title">Captured in My Heart...</h1>
+      <div class="hint-down">⬇️</div>
+    </div>
+
+    <div class="collage-section">
+      <h2>A Few of My Favorites... ✨</h2>
+      <div class="collage-grid">
+        <img src="img3.jpeg" class="collage-img" style="--r: -5" alt="Mem 1">
+        <img src="img4.jpeg" class="collage-img" style="--r: 5" alt="Mem 2">
+        <img src="img5.jpeg" class="collage-img" style="--r: -3" alt="Mem 3">
+        <img src="img6.jpeg" class="collage-img" style="--r: 4" alt="Mem 4">
+      </div>
+    </div>
+
+    <div class="final-message" id="finalMessage">
+      <h1 class="big-love">I LOVE YOU</h1>
+      <p style="font-size: 1.3rem;">You are my world.</p>
+      <button class="next-btn" onclick="showCanva()">Open Scrapbook ➔</button>
+    </div>
+
+    <div id="canvaContainer" class="hidden">
+      <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <iframe loading="lazy"
+                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
+                src="https://www.canva.com/design/DAHHwen1iBQ/ENbFQ32SIP8VGCth75-RkA/view?embed"
+                allowfullscreen="allowfullscreen">
+        </iframe>
+      </div>
+      <p style="text-align: center; margin-top: 25px; font-family: 'Courier New', monospace;">Made with ❤️ by Aryan N</p>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="audio.mpeg" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
